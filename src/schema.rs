@@ -59,7 +59,7 @@ pub struct ExerciseEdit<'a> {
 }
 
 impl<'a> ExerciseCreate<'a> {
-    fn new(name: &'a str, approaches: u32, repetitions: u32) -> ExerciseCreate<'a> {
+    pub fn new(name: &'a str, approaches: u32, repetitions: u32) -> ExerciseCreate<'a> {
         Self {
             name: name,
             approaches: approaches,
@@ -69,7 +69,7 @@ impl<'a> ExerciseCreate<'a> {
 }
 
 impl<'a> ExercisePublic<'a> {
-    fn new(id: u32, name: &'a str, approaches: u32, repetitions: u32) -> ExercisePublic<'a> {
+    pub fn new(id: u32, name: &'a str, approaches: u32, repetitions: u32) -> ExercisePublic<'a> {
         Self {
             id: id,
             name: name,
